@@ -6,10 +6,10 @@
     <edmx:Diagrams>
       <Diagram DiagramId="f363654e2cc3488ea58b7d01829314f4" Name="Diagram1">
         <EntityTypeShape EntityType="NorthWindAzure2Model.Category" Width="1.5" PointX="6" PointY="14.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="NorthWindAzure2Model.Contact" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" FillColor="0, 122, 204" />
+        <EntityTypeShape EntityType="NorthWindAzure2Model.Contact" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" FillColor="Yellow" />
         <EntityTypeShape EntityType="NorthWindAzure2Model.ContactContactDevice" Width="2.25" PointX="3" PointY="5" IsExpanded="true" FillColor="Yellow" />
         <EntityTypeShape EntityType="NorthWindAzure2Model.ContactType" Width="1.5" PointX="3.75" PointY="2.125" IsExpanded="true" FillColor="Yellow" />
-        <EntityTypeShape EntityType="NorthWindAzure2Model.Country" Width="1.5" PointX="3.75" PointY="8.5" IsExpanded="true" FillColor="Yellow" />
+        <EntityTypeShape EntityType="NorthWindAzure2Model.Country" Width="1.5" PointX="3.75" PointY="8.5" IsExpanded="true" FillColor="GreenYellow" />
         <EntityTypeShape EntityType="NorthWindAzure2Model.Customer" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
         <EntityTypeShape EntityType="NorthWindAzure2Model.Department" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" FillColor="Yellow" />
         <EntityTypeShape EntityType="NorthWindAzure2Model.Employee" Width="1.5" PointX="6" PointY="9.75" IsExpanded="true" />
