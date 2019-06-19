@@ -5,6 +5,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BlogPostEntityTestProject
 {
+    /// <summary>
+    /// Old but a good starter (some instructions have steps with wrong items)
+    /// https://docs.microsoft.com/en-us/ef/ef6/modeling/designer/workflows/database-first
+    /// </summary>
     [TestClass(), TestCategory("EF6 Database first")]
     public class UnitTest1
     {
