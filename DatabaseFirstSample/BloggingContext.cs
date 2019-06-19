@@ -14,6 +14,8 @@ namespace DatabaseFirstSample
 
         public virtual DbSet<Blog> Blogs { get; set; }
         public virtual DbSet<Post> Posts { get; set; }
+        public virtual DbSet<Member> Members { get; set; }
+        public virtual DbSet<MemberType> MemberTypes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
