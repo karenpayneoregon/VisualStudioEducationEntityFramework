@@ -64,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BackEndDataProviderLibrary\BackEndDataProviderLibrary.csproj">
+      <Project>{d485c48c-9dc1-4d92-9627-5ea86fbb040f}</Project>
+      <Name>BackEndDataProviderLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PersonPhoneProject\PersonPhoneProject.csproj">
       <Project>{c423d06e-b838-4cbc-889e-c3b714b3e987}</Project>
       <Name>PersonPhoneProject</Name>

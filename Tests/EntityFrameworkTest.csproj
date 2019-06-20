@@ -77,6 +77,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BackEndDataProviderLibrary\BackEndDataProviderLibrary.csproj">
+      <Project>{d485c48c-9dc1-4d92-9627-5ea86fbb040f}</Project>
+      <Name>BackEndDataProviderLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NorthWindEntityLibrary\NorthWindEntityLibrary.csproj">
       <Project>{6B9ADC5F-EF69-4ACC-8C1A-0106F652FD14}</Project>
       <Name>NorthWindEntityLibrary</Name>
