@@ -197,6 +197,36 @@ namespace TeamLibrary.EntityFrameworkClasses
 
         }
 
+        public List<CustomerEntity> AllCustomers()
+        {
+            using (var context = new NorthWindEntities())
+            {
+                
+                var customerData = (
+                    from customer in context.Customers
+                    join contactType in context.ContactTypes on customer.ContactTypeIdentifier equals contactType.ContactTypeIdentifier
+                    join contact in context.Contacts on customer.ContactId equals contact.ContactId
+                    select new CustomerEntity
+                    {
+                        CustomerIdentifier = customer.CustomerIdentifier,
+                        Company = customer.CompanyName,
+                        ContactIdentifier = customer.ContactId,
+                        FirstName = contact.FirstName,
+                        LastName = contact.LastName,
+                        ContactTypeIdentifier = contactType.ContactTypeIdentifier,
+                        ContactTitle = contactType.ContactTitle,
+                        Street = customer.Address,
+                        City = customer.City,
+                        PostalCode = customer.PostalCode,
+                        CountryIdentifier = customer.CountryIdentifier,
+                        CountyName = customer.Country.Name
+                    }).ToList();
+
+                return customerData;
+
+            }
+        }
+
         /// <summary>
         /// Get customer by primary key, use a custom class to get specific fields.
         /// </summary>
@@ -222,7 +252,25 @@ namespace TeamLibrary.EntityFrameworkClasses
                                 Title = company.ContactType.ContactTitle
                             };
 
-
+                var customerData = (
+                    from customer in context.Customers
+                    join contactType in context.ContactTypes on customer.ContactTypeIdentifier equals contactType.ContactTypeIdentifier
+                    join contact in context.Contacts on customer.ContactId equals contact.ContactId
+                    select new CustomerEntity
+                    {
+                        CustomerIdentifier = customer.CustomerIdentifier,
+                        Company = customer.CompanyName,
+                        ContactIdentifier = customer.ContactId,
+                        FirstName = contact.FirstName,
+                        LastName = contact.LastName,
+                        ContactTypeIdentifier = contactType.ContactTypeIdentifier,
+                        ContactTitle = contactType.ContactTitle,
+                        Street = customer.Address,
+                        City = customer.City,
+                        PostalCode = customer.PostalCode,
+                        CountryIdentifier = customer.CountryIdentifier,
+                        CountyName = customer.Country.Name
+                    }).ToList();
                 return query.FirstOrDefault();
 
             }
